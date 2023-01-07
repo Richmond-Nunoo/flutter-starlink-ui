@@ -30,7 +30,7 @@ class InitialPage extends StatelessWidget {
                   children: [
                     IconButton(
                       onPressed: () {
-                        print("Log In");
+                        debugPrint("Log In");
                       },
                       icon: const Icon(
                         Icons.person_outline_rounded,
@@ -40,7 +40,7 @@ class InitialPage extends StatelessWidget {
                     ),
                     IconButton(
                       onPressed: () {
-                        print("Help");
+                        debugPrint("Help");
                       },
                       icon: const Icon(
                         Icons.help_outline,

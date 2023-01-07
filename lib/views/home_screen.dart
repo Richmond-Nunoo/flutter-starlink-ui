@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   image: DecorationImage(
                     fit: BoxFit.fill,
                     image: AssetImage(
-                      'assets/image10.jpg',
+                      'assets/image111.jpg',
                     ),
                   ),
                 ),
@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   image: DecorationImage(
                     fit: BoxFit.fill,
                     image: AssetImage(
-                      'assets/image6.jpg',
+                      'assets/image1111.jpg',
                     ),
                   ),
                 ),
