@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:starlink/views/initital_page.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -23,12 +24,13 @@ class _HomeScreenState extends State<HomeScreen> {
               currentIndex = index;
             }),
             children: [
+              const InitialPage(),
               Container(
                 decoration: const BoxDecoration(
                   image: DecorationImage(
                     fit: BoxFit.fill,
                     image: AssetImage(
-                      'assets/image1.jpg',
+                      'assets/image10.jpg',
                     ),
                   ),
                 ),
@@ -40,19 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   image: DecorationImage(
                     fit: BoxFit.fill,
                     image: AssetImage(
-                      'assets/image2.jpg',
-                    ),
-                  ),
-                ),
-                height: double.infinity,
-                width: double.infinity,
-              ),
-              Container(
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: AssetImage(
-                      'assets/image3.jpg',
+                      'assets/image6.jpg',
                     ),
                   ),
                 ),
