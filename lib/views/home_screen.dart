@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:starlink/views/initital_page.dart';
+import 'package:starlink/views/keep_pages_alive.dart';
+import 'package:starlink/views/last_page.dart';
+import 'package:starlink/views/second_page.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -23,32 +26,10 @@ class _HomeScreenState extends State<HomeScreen> {
             onPageChanged: (index) => setState(() {
               currentIndex = index;
             }),
-            children: [
-              const InitialPage(),
-              Container(
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: AssetImage(
-                      'assets/image111.jpg',
-                    ),
-                  ),
-                ),
-                height: double.infinity,
-                width: double.infinity,
-              ),
-              Container(
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: AssetImage(
-                      'assets/image1111.jpg',
-                    ),
-                  ),
-                ),
-                height: double.infinity,
-                width: double.infinity,
-              )
+            children: const [
+              KeepPageAlive(child: InitialPage()),
+              KeepPageAlive(child: SecondPage()),
+              KeepPageAlive(child: LastPage()),
             ],
           ),
           Padding(
