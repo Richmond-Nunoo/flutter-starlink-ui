@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:starlink/views/initital_page.dart';
-import 'package:starlink/views/keep_pages_alive.dart';
+import 'package:starlink/views/first_page.dart';
 import 'package:starlink/views/last_page.dart';
 import 'package:starlink/views/second_page.dart';
 
@@ -27,9 +26,9 @@ class _HomeScreenState extends State<HomeScreen> {
               currentIndex = index;
             }),
             children: const [
-              KeepPageAlive(child: InitialPage()),
-              KeepPageAlive(child: SecondPage()),
-              KeepPageAlive(child: LastPage()),
+              InitialPage(),
+              SecondPage(),
+              LastPage(),
             ],
           ),
           Padding(

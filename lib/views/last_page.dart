@@ -1,4 +1,6 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:starlink/views/widgets/images_url.dart';
 
 class LastPage extends StatelessWidget {
   const LastPage({super.key});
@@ -8,18 +10,24 @@ class LastPage extends StatelessWidget {
     return Stack(
       alignment: Alignment.bottomCenter,
       children: [
-        Container(
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-              fit: BoxFit.fill,
-              image: AssetImage(
-                'assets/image6.jpg',
-              ),
-            ),
-          ),
-          height: double.infinity,
-          width: double.infinity,
-        ),
+         CachedNetworkImage(
+            imageBuilder: (context, imageProvider) => Container(
+                  decoration: BoxDecoration(
+                    image:
+                        DecorationImage(fit: BoxFit.fill, image: imageProvider),
+                  ),
+                  height: double.infinity,
+                  width: double.infinity,
+                ),
+            errorWidget: (context, url, error) => const Center(
+                  child: Icon(Icons.error),
+                ),
+            placeholder: (context, url) => Container(
+                  width: double.infinity,
+                  height: double.infinity,
+                  color: Colors.black,
+                ),
+            imageUrl: imageUrls[2]),
         SafeArea(
           child: Padding(
             padding: const EdgeInsets.only(top: 32),
@@ -54,7 +62,7 @@ class LastPage extends StatelessWidget {
             children: [
               InkWell(
                 onTap: () {
-                  print("ORDER NOW");
+                  debugPrint("ORDER NOW");
                 },
                 child: Container(
                   height: 45,
