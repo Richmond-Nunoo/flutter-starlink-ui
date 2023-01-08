@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:starlink/views/first_page.dart';
-import 'package:starlink/views/last_page.dart';
+import 'package:starlink/views/third_page.dart';
 import 'package:starlink/views/second_page.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -22,9 +22,11 @@ class _HomeScreenState extends State<HomeScreen> {
         alignment: Alignment.bottomCenter,
         children: [
           PageView(
-            onPageChanged: (index) => setState(() {
-              currentIndex = index;
-            }),
+            onPageChanged: (index) => setState(
+              () {
+                currentIndex = index;
+              },
+            ),
             children: const [
               InitialPage(),
               SecondPage(),
