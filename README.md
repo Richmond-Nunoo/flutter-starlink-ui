@@ -8,7 +8,7 @@ A Simple Flutter UI of starlink mobile app
   <img src="https://github.com/Richmond-Nunoo/flutter-starlink-ui/blob/main/screenshot2.png" width="30%"/>
   <img src="https://github.com/Richmond-Nunoo/flutter-starlink-ui/blob/main/screenshot3.png" width="30%"/>
   <img src="https://github.com/Richmond-Nunoo/flutter-starlink-ui/blob/main/screenshot1.png" width="30%"/>
-</p> -->
+</p> 
 
 # Prerequisites
 * Android Studio/Vscode/Intellij IDE
